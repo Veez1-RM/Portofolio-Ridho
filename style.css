@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #1f242d;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #123458;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar a:hover {
+    color: #7cf03d;
+    font-weight: bold;
+}
+
+.navbar ul li .active {
+    color: #7cf03d;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar ul li .breaking-news:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+
+.profile h1 {
+    font-size: 35px;
+}
+
+.profile h2 {
+    font-size: 60px;
+    margin-top: -10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.my-image .img-box {
+    width: 32vw;
+    height: 32vw;
+    background-color: rgb(187, 255, 0);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.my-image .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: slateblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.my-image .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+}
+
+.myprofile1 {
+    background-color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding-bottom: 50px;
+    padding: auto;
+    flex-direction: column;
+    display: flex;
+    
+}
+        
+.myprofile1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+.myprofile {
+        background-color: #00809D;
+        color: white;
+        padding: 20px;
+        margin: 20px auto;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        text-align: center;
+        width: 25%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+.myprofile h1 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+
+.profile-content h3 {
+    color: #00809D;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-content p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.profile-content .data-diri-nama {
+    margin-bottom: 15px;
+}
+
+.profile-content .data-diri-alamat {
+    margin-bottom: 18px;
+}
+
+.profile-content .data-diri-ttl {
+    margin-bottom: 18px;
+}
+
+.profile-content .data-diri-sekolah {
+    margin-bottom: 15px;
+}
+
+.profile-content .data-diri-jurusan {
+    margin-bottom: 15px;
+}
+
+.profile-content .data-diri-hobi {
+    margin-bottom: 3px;
+}
+
+/* KATA PENGANTAR / KETERANGAN */
+
+.informasi {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    padding: 20px;
+
+}
+
+.informasi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.keterangan-1{
+    width: 75%;
+    justify-content: center;
+    text-align: left;
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: block;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.keterangan-1:hover {
+    transform: translateY(-5px);
+    box-shadow: #1f242d;
+}
+
+.keterangan-2 {
+    width: 75%;
+    justify-content: center;
+    text-align: left;
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: block;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.keterangan-2:hover {
+    transform: translateY(-5px);
+    box-shadow: #8DBCC7;
+}
+
+.header-motto {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.header-motto h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-decoration: none;
+
+}
+.motto-hidup {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.motto-hidup:hover {
+    transform: translateY(-5px);
+    box-shadow: yellow;
+}
+.motto-hidup p {
+    color: darkgray;
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: skyblue;
+    margin-top: 5px;
+    text-decoration: underline;
+
+}
+
+
+
+/* About Me */
+
+.header-aboutme h2 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 125px;
+
+}
+
+.isi-aboutme{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border-radius:  25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.isi-aboutme:hover {
+    transform: translateY(-5px);
+    box-shadow: #00809D;
+}
+
+.aboutme-1 {
+    width: 85%;
+    justify-content: center;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.aboutme-1:hover {
+    transform: translateY(-5px);
+    box-shadow: #1f242d;
+}
+.isi-aboutme p {
+    margin-bottom: 15px;
+}
+
+
+.cv {
+    display: flex;
+    height: auto;
+    padding: 60px 9% 60px;
+    background-color: #F3F3E0;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.riwayat-hidup {
+    width: 100%;
+}
+
+.pendidikan {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: block;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+.pendidikan:hover {
+    transform: translateY(-20px);
+}
+
+.pendidikan h3 {
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.keahlian {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 22px;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: block;
+    flex-direction: column;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.keahlian:hover {
+    transform: translateY(-10px);
+}
+
+.keahlian h3 {
+    font-size: 25px;
+    background-color: goldenrod;
+    width: 22%;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.softskills {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: block;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.softskills:hover {
+    transform: translateY(-10px);
+}
+
+.softskills h3 {
+    font-size: 25px;
+    background-color: #8DBCC7;
+    width: 22%;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.pengalaman {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: block;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.pengalaman:hover {
+    transform: translateY(-10px);
+}
+
+.pengalaman h3 {
+    font-size: 25px;
+    background-color: #EAEBD0;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.pengalaman h5 {
+    font-size: 20px;
+}
+
+/* Contact */
+
+form table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form table:hover {
+    transform: translateY(-5px);
+}
+
+form h2 {
+    color: #ccc;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+form td {
+    padding: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #102E50;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: aqua;
+}
